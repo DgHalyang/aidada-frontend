@@ -1,6 +1,6 @@
 <template>
   <div id="homePage">
-    <div class="searchBar">
+    <!-- <div class="searchBar">
       <a-input-search
         :style="{ width: '320px' }"
         placeholder="快速发现答题应用"
@@ -8,7 +8,7 @@
         size="large"
         search-button
       />
-    </div>
+    </div> -->
     <a-list
       class="list-demo-action-layout"
       :grid-props="{ gutter: [20, 20], sm: 24, md: 12, lg: 8, xl: 6 }"
