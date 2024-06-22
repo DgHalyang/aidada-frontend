@@ -21,13 +21,23 @@
         </a-menu-item>
       </a-menu>
     </a-col>
-    <a-col flex="100px">
+    <a-col
+      flex="250px"
+      style="display: flex; justify-content: center; align-items: center"
+    >
       <div v-if="loginUserStore.loginUser.id">
-        {{ loginUserStore.loginUser.userName ?? "无名" }}
+        欢迎 : {{ loginUserStore.loginUser.userName ?? "无名" }}
       </div>
       <div v-else>
         <a-button type="primary" href="/user/login">登录</a-button>
       </div>
+      <a-button
+        v-if="loginUserStore.loginUser.id"
+        type="primary"
+        href="/user/login"
+        style="margin-left: 20px"
+        >退出</a-button
+      >
     </a-col>
   </a-row>
 </template>
